@@ -1,0 +1,6 @@
+mvn spring-boot:build-image
+old run command:
+docker run -tty --publish 8080:8080 spring-boot:build-image:0.0.1-SNAPSHOT
+
+new run command
+docker run -d --name my_app --hostname my_app -p 8080:8080 hopeful_borg
